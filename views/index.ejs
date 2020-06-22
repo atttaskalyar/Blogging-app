@@ -1,0 +1,15 @@
+<%- include("partials/header")%>
+
+
+<h1>We have loaded ejs</h1>
+
+<% blogs.forEach(function(blog){ %>
+<div>
+    <h2><%= blog.title %></h2>
+    <img src="<%= blog.image %> " alt="">
+    <p><%= blog.body %> </p>
+</div>
+
+<%}) %>
+
+<%- include("partials/footer") %>
